@@ -55,12 +55,27 @@ $ yarn storybook
 
 ### import from Bit
 
+1. 로컬 프로젝트 만들기
+
+```
+$ vue create test-storybook-bit
+$ cd test-storybook-bit
+$ yarn
+$ yarn serve
+```
+
+2. Bit에서 필요한 컴포넌트만 가져오기
+
 ```
   $ bit import <유저명>.<컬렉션명>/<컴포넌트 이름>
 
   // 예시
   $ bit import seunghyum.virnect-test/virnect-button
 ```
+
+- node_modules 파일안의 @bit 폴더에 저장됨.
+- import 콜렉션이름 from '@bit/...'으로 가져와 쓸 수 있음.
+
 ## 참고
 
 UI 컴포넌트 참고 사이트 : https://bit.dev/lusaxweb
