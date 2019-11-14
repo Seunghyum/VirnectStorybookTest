@@ -9,6 +9,7 @@
     "storybook": "start-storybook -p 5000"
   },
   "dependencies": {
+    "bit-bin": "^14.4.3",
     "core-js": "^3.3.2",
     "vue": "^2.6.10"
   },
@@ -48,5 +49,10 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  }
 }
