@@ -1,24 +1,12 @@
 # virnect-storybook-bit-test
 
-## Project setup
+## Setting & Start
+
 ```
-yarn install
+$ yarn
+$ yarn storybook
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## 참고
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://bit.dev/lusaxweb
