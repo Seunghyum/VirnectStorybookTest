@@ -9,8 +9,9 @@ $ yarn storybook
 
 ## Work Flow 시연
 
-- 참고 : [Bit Quick Start](https://docs.bit.dev/docs/quick-start)
 - 대상 Bit 레포 [주소](https://bit.dev/seunghyum/virnect-test)
+- Export 해볼 레포 [주소](https://github.com/Seunghyum/virnect-storybook-bit-test)
+- Import는 로컬에서
 - Bit 계정에 로그인하지 않고 CLI만 설치하면 가져다 쓸 수 있음. Bit으로 Export 만 로그인 필요.
 
 ### 1. Export to Bit
