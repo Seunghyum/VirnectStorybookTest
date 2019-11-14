@@ -14,9 +14,17 @@ $ yarn storybook
 - Import는 로컬에서
 - Bit 계정에 로그인하지 않고 CLI만 설치하면 가져다 쓸 수 있음. Bit으로 Export 만 로그인 필요.
 
-### 1. Export to Bit
+## 1. Storybook 시연
 
-- 컬렉션이 없을 경우 하나 만들어야함.
+```
+$ yarn storybook
+```
+
+## 2. Bit 시연
+
+### Export to Bit
+
+- Bit의 컬렉션과 컴포넌트 설명 : [주소](https://bit.dev/seunghyum/virnect-test)
 
 1. 로그인
 2. Storybook 레포지토리(여기)에서 Bit cloud로 export할 대상 컴포넌트를 아래의 명령어로 추가
@@ -45,7 +53,7 @@ $ yarn storybook
   $ bit export seunghyum.virnect-test
 ```
 
-### 2. import from Bit
+### import from Bit
 
 ```
   $ bit import <유저명>.<컬렉션명>/<컴포넌트 이름>
@@ -56,6 +64,3 @@ $ yarn storybook
 ## 참고
 
 UI 컴포넌트 참고 사이트 : https://bit.dev/lusaxweb
-
-
-
