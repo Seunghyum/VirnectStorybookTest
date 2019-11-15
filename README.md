@@ -13,13 +13,22 @@ $ yarn storybook
 
 ## Work Flow 시연
 
-- 참고 : [Bit Quick Start](https://docs.bit.dev/docs/quick-start)
 - 대상 Bit 레포 [주소](https://bit.dev/seunghyum/virnect-test)
+- Export 해볼 레포 [주소](https://github.com/Seunghyum/virnect-storybook-bit-test)
+- Import는 로컬에서
 - Bit 계정에 로그인하지 않고 CLI만 설치하면 가져다 쓸 수 있음. Bit으로 Export 만 로그인 필요.
 
-### 1. Export to Bit
+## 1. Storybook 시연
 
-- 컬렉션이 없을 경우 하나 만들어야함.
+```
+$ yarn storybook
+```
+
+## 2. Bit 시연
+
+### Export to Bit
+
+- Bit의 컬렉션과 컴포넌트 설명 : [주소](https://bit.dev/seunghyum/virnect-test)
 
 1. 로그인
 2. Storybook 레포지토리(여기)에서 Bit cloud로 export할 대상 컴포넌트를 아래의 명령어로 추가
@@ -48,7 +57,18 @@ $ yarn storybook
   $ bit export seunghyum.virnect-test
 ```
 
-### 2. import from Bit
+### import from Bit
+
+1. 로컬 프로젝트 만들기
+
+```
+$ vue create test-storybook-bit
+$ cd test-storybook-bit
+$ yarn
+$ yarn serve
+```
+
+2. Bit에서 필요한 컴포넌트만 가져오기
 
 ```
   $ bit import <유저명>.<컬렉션명>/<컴포넌트 이름>
@@ -56,9 +76,10 @@ $ yarn storybook
   // 예시
   $ bit import seunghyum.virnect-test/virnect-button
 ```
+
+- node_modules 파일안의 @bit 폴더에 저장됨.
+- import 콜렉션이름 from '@bit/...'으로 가져와 쓸 수 있음.
+
 ## 참고
 
 UI 컴포넌트 참고 사이트 : https://bit.dev/lusaxweb
-
-
-
