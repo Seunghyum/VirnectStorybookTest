@@ -1,5 +1,9 @@
 # virnect-storybook-bit-test
 
+## 시연해볼 구조
+
+<img src="./Storybook__Bit.dev_.png" style="margin:auto;">
+
 ## Setting & Start
 
 ```
