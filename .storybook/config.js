@@ -1,4 +1,4 @@
-import '../src/utils/simple-grid.min.css'
+import 'element-ui/lib/theme-chalk/index.css';
 import { configure, addDecorator, addParameters  } from '@storybook/vue';
 
 const components = require.context('../src/components', true, /\.stories.js$/);

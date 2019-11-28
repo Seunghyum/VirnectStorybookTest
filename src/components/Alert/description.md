@@ -1,29 +1,27 @@
 # Markdown 메뉴얼 테스트입니다.
 
-
-
 # Color by Class 
 
-- Primary
+- success
 
 ```html
-  <virnect-button  color="primary" type="filled">Primary</virnect-button>
+  <virnect-button  type="success" type="filled">success</virnect-button>
 ```
 
-- Success
+- info
 
 ```html
-  <virnect-button  color="success" type="filled">Success</virnect-button>
+  <virnect-button  type="info" type="filled">info</virnect-button>
 ```
 
-- Dark
+- warning
 
 ```html
-  <virnect-button  color="dark" type="filled">Dark</virnect-button>
+  <virnect-button  type="warning" type="filled">warning</virnect-button>
 ```
 
-- Custom color
+- error
 
 ```html
-  <virnect-button  color="rgb(134, 4, 98)" type="filled">Custom Color</virnect-button>
+  <virnect-button  type="error" type="filled">error</virnect-button>
 ```
