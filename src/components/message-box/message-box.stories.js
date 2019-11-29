@@ -1,4 +1,4 @@
-// @ts-ignore
+
 import { storiesOf } from '@storybook/vue';
 import VirnectMessageBox from "./"
 import VirnectMessage from "../message"

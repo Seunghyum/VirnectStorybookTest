@@ -168,7 +168,7 @@ export function parseMinWidth(minWidth) {
     }
   }
   return minWidth;
-};
+}
 
 export function parseHeight(height) {
   if (typeof height === 'number') {

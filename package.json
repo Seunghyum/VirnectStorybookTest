@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "sb": "start-storybook -p 5000"
+    "serve": "start-storybook -p 5000",
+    "build": "build-storybook -c .storybook -o .out",
+    "deploy": "storybook-to-ghpages"
   },
   "dependencies": {
     "bit-bin": "^14.4.3",
@@ -15,14 +14,24 @@
     "vue": "^2.6.10"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.2.6",
     "@storybook/addon-backgrounds": "^5.2.6",
+    "@storybook/addon-console": "^1.2.1",
     "@storybook/addon-knobs": "^5.2.6",
     "@storybook/addon-notes": "^5.2.6",
+    "@storybook/addon-storysource": "^5.2.6",
+    "@storybook/addon-viewport": "^5.2.6",
+    "@storybook/source-loader": "^5.2.6",
+    "@storybook/storybook-deployer": "^2.8.1",
     "@storybook/vue": "^5.2.6",
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-eslint": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
     "babel-eslint": "^10.0.3",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-vue": "^2.0.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",

@@ -1,4 +1,4 @@
-// @ts-ignore
+
 import { storiesOf } from '@storybook/vue';
 import VirnectCheckbox from "./src/checkbox.vue"
 import VirnectCheckboxButton from "./src/checkbox-button.vue"

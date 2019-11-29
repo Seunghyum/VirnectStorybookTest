@@ -1,4 +1,4 @@
-// @ts-ignore
+
 import { storiesOf } from '@storybook/vue';
 import VirnectAlert from "./src/main.vue"
 import description from './description.md';

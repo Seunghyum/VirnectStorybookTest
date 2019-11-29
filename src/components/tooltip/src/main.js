@@ -1,5 +1,5 @@
 import Popper from 'element-ui/src/utils/vue-popper';
-import debounce from 'throttle-debounce/debounce';
+import {debounce} from 'throttle-debounce';
 import { addClass, removeClass, on, off } from 'element-ui/src/utils/dom';
 import { generateId } from 'element-ui/src/utils/util';
 import Vue from 'vue';
@@ -218,7 +218,7 @@ export default {
       for (let index = 0; index < slots.length; index++) {
         if (slots[index] && slots[index].tag) {
           element = slots[index];
-        };
+        }
       }
       return element;
     }

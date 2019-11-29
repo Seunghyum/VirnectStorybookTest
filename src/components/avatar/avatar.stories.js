@@ -1,4 +1,4 @@
-// @ts-ignore
+
 import { storiesOf } from '@storybook/vue';
 import VirnectAvatar from "./src/main.vue"
 import VirnectCol from "../col/src/col"
