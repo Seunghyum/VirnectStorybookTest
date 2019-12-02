@@ -70,7 +70,6 @@
         visible: true
       };
     },
-
     methods: {
       close() {
         this.visible = false;

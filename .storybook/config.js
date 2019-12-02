@@ -3,8 +3,16 @@ import { configure, addDecorator, addParameters  } from '@storybook/vue';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { setConsoleOptions } from '@storybook/addon-console';
 import virnectTheme from './theme/virnectTheme';
+import locale from 'element-ui/lib/locale/lang/ko'
+import Vue from 'vue'
+import VueI18n from 'vue-i18n'
+import koLocale from 'element-ui/lib/locale/lang/ko'
 
-const components = require.context('../src/components', true, /\.stories.js$/);
+// Vue.use(VueI18n)
+// Vue.config.lang = 'ko'
+// Vue.locale('ko', koLocale)
+
+const components = require.context('../packages', true, /\.stories.js$/);
 
 function loadStories() {
   components.keys().forEach(filename => components(filename));
@@ -20,17 +28,17 @@ addParameters({
     { name: 'twitter', value: '#00aced' },
     { name: 'facebook', value: '#3b5998' },
   ],
-});
-
-addParameters({
   viewport: {
     name: 'Device',
     viewports: INITIAL_VIEWPORTS,
   },
 });
 
-var decoratorVueTemplate = () => { return { template: `<div style="margin-top:3rem;"><story/></div>` }}
-addDecorator(decoratorVueTemplate)
+addDecorator(() => ({
+  template: '<story/>',
+  i18n: locale,
+  template: `<div style="margin-top:3rem;"><story/></div>`
+}));
 
 const panelExclude = setConsoleOptions({}).panelExclude;
 setConsoleOptions({

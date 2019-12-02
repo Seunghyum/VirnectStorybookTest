@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "start-storybook -p 5000",
+    "sb": "start-storybook -p 5000",
     "build": "build-storybook -c .storybook -o .out",
     "deploy": "gh-pages -d .out"
   },
@@ -12,7 +12,8 @@
     "core-js": "^3.3.2",
     "element-ui": "^2.13.0",
     "gh-pages": "^2.1.1",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.15.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.2.6",
@@ -22,7 +23,7 @@
     "@storybook/addon-notes": "^5.2.6",
     "@storybook/addon-storysource": "^5.2.6",
     "@storybook/addon-viewport": "^5.2.6",
-    "@storybook/source-loader": "^5.2.6",
+    "@storybook/source-loader": "^5.2.7",
     "@storybook/storybook-deployer": "^2.8.1",
     "@storybook/vue": "^5.2.6",
     "@vue/cli-plugin-babel": "^4.0.0",
@@ -36,6 +37,7 @@
     "babel-preset-vue": "^2.0.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "storybook-addon-i18n": "^5.1.11",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
