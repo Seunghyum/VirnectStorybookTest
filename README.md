@@ -1,4 +1,22 @@
-# virnect-storybook-bit-test
+# virnect-storybook-test
+
+시연용 버넥트 스토리북 테스트 프로젝트
+
+## 시연
+
+```shell
+// init
+$ yarn
+
+// 실행
+$ yarn sb
+
+// 빌드
+$ yarn build
+
+// github page 배포
+$ yarn deploy
+```
 
 ## 목표
 
